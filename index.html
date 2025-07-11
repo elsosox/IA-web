@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🔭 Generador de Preguntas de Física</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>🧪 Generador de Preguntas de Física</h1>
+    <p class="subtitulo">Crea preguntas automáticas con IA para Primaria, Secundaria o Universidad.</p>
+
+    <form id="pregunta-form">
+      <label for="grado">🔷 Nivel educativo</label>
+      <select name="grado" required>
+        <option value="">Selecciona una opción</option>
+        <option value="Primaria">Primaria</option>
+        <option value="Secundaria">Secundaria</option>
+        <option value="Universidad">Universidad</option>
+      </select>
+
+      <label for="tema">🌀 Tema de física</label>
+      <input type="text" name="tema" placeholder="Ej: Ley de Newton, MRU, Energía Cinética..." required>
+
+      <button type="submit">⚡ Generar Pregunta</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <a href="juego.html">
+      <button type="button">🎮 Ir al Juego de Física</button>
+    </a>
+  </div>
+
+  <div class="footer">
+    © 2025 Plataforma Educativa de Física · OpenAI Powered
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
